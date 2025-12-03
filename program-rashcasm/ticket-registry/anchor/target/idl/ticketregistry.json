@@ -1,0 +1,281 @@
+{
+  "address": "EUnidZqxcVZLwsEaR9Msz1vVuethUct6V4zZmLbNmB8L",
+  "metadata": {
+    "name": "ticketregistry",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "buy",
+      "discriminator": [
+        102,
+        6,
+        61,
+        18,
+        1,
+        218,
+        235,
+        234
+      ],
+      "accounts": [
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "ticket",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  116,
+                  105,
+                  99,
+                  107,
+                  101,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "event"
+              },
+              {
+                "kind": "account",
+                "path": "buyer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "event",
+          "writable": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "event_organizer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "event",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  118,
+                  101,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "name"
+              },
+              {
+                "kind": "account",
+                "path": "event_organizer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "ticket_price",
+          "type": "u64"
+        },
+        {
+          "name": "available_tickets",
+          "type": "u64"
+        },
+        {
+          "name": "start_date",
+          "type": "i64"
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "discriminator": [
+        183,
+        18,
+        70,
+        156,
+        148,
+        109,
+        161,
+        34
+      ],
+      "accounts": [
+        {
+          "name": "event_organizer",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "event"
+          ]
+        },
+        {
+          "name": "event",
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Event",
+      "discriminator": [
+        125,
+        192,
+        125,
+        158,
+        9,
+        115,
+        152,
+        233
+      ]
+    },
+    {
+      "name": "Ticket",
+      "discriminator": [
+        41,
+        228,
+        24,
+        165,
+        78,
+        90,
+        235,
+        200
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "NameTooLong",
+      "msg": "Name too long"
+    },
+    {
+      "code": 6001,
+      "name": "DescriptionTooLong",
+      "msg": "Description too long"
+    },
+    {
+      "code": 6002,
+      "name": "StartDateInThePast",
+      "msg": "Start date is in the past"
+    },
+    {
+      "code": 6003,
+      "name": "AvailableTicketsTooLow",
+      "msg": "Available tickets is too low"
+    },
+    {
+      "code": 6004,
+      "name": "AllTicketsSoldOut",
+      "msg": "All tickets sold out"
+    }
+  ],
+  "types": [
+    {
+      "name": "Event",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "ticket_price",
+            "type": "u64"
+          },
+          {
+            "name": "available_tickets",
+            "type": "u64"
+          },
+          {
+            "name": "event_organizer",
+            "type": "pubkey"
+          },
+          {
+            "name": "start_date",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ticket",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "event",
+            "type": "pubkey"
+          },
+          {
+            "name": "buyer",
+            "type": "pubkey"
+          },
+          {
+            "name": "price",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ]
+}

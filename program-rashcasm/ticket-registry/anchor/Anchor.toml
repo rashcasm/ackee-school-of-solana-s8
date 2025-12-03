@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+ticketregistry = "EUnidZqxcVZLwsEaR9Msz1vVuethUct6V4zZmLbNmB8L"
+
+[programs.devnet]
+ticketregistry = "EUnidZqxcVZLwsEaR9Msz1vVuethUct6V4zZmLbNmB8L"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "./node_modules/.bin/jest --preset ts-jest"

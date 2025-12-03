@@ -1,0 +1,9 @@
+/home/rashmin/Codeshit/School of solana/program-rashcasm/ticket-registry/anchor/target/sbpf-solana-solana/release/deps/libsolana_system_interface-5adf70d106e6d325.rmeta: /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs
+
+/home/rashmin/Codeshit/School of solana/program-rashcasm/ticket-registry/anchor/target/sbpf-solana-solana/release/deps/libsolana_system_interface-5adf70d106e6d325.rlib: /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs
+
+/home/rashmin/Codeshit/School of solana/program-rashcasm/ticket-registry/anchor/target/sbpf-solana-solana/release/deps/solana_system_interface-5adf70d106e6d325.d: /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs
+
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/lib.rs:
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/error.rs:
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-system-interface-1.0.0/src/instruction.rs:

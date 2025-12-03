@@ -1,0 +1,10 @@
+/home/rashmin/Codeshit/School of solana/program-rashcasm/ticket-registry/anchor/target/sbpf-solana-solana/release/deps/libthiserror-1a6713b24bbd7ea6.rmeta: /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs
+
+/home/rashmin/Codeshit/School of solana/program-rashcasm/ticket-registry/anchor/target/sbpf-solana-solana/release/deps/libthiserror-1a6713b24bbd7ea6.rlib: /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs
+
+/home/rashmin/Codeshit/School of solana/program-rashcasm/ticket-registry/anchor/target/sbpf-solana-solana/release/deps/thiserror-1a6713b24bbd7ea6.d: /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs /home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs
+
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/lib.rs:
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/aserror.rs:
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/display.rs:
+/home/rashmin/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.69/src/provide.rs:
